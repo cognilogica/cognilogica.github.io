@@ -16,14 +16,93 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.header-div {
+  background-color: transparent;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column-l {
+  float: left;
+  text-align: right;
+  width: 30%;
+  padding: 10px;
+}
+.column-m {
+  float: left;
+  width: 5%;
+  padding: 10px;
+}
+.column-r {
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-font {
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-variant-caps: all-small-caps;
+  /* font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;  */
+  /*font-family: Roboto, Arial, Geneva, Helvetica, sans-serif;*/
+}
+
+.content-font {
+  font-family: 'Libre Franklin', sans-serif;
+  /* font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;  */
+  /*font-family: Roboto, Arial, Geneva, Helvetica, sans-serif;*/
+}
+
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
 </head>
 <body style="height:100%;">
 <div class="parallax-cognilogica-bg"></div>
 
-<div style="height:100%;">
-Test 1 2 3
-<img src="./cropped-C_Icon_Sq-1.png"></img>
+<div class="header-div" style="height:20%;width=100%;">
+	<div style="height:30%;">
+		<div style="width: 40%;">
+			<img src="./cropped-C_Icon_Sq-1.png" width="80rem"></img>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="column-m header-font"><h2 >&nbsp;</h2></div>
+
+	<div class="column-l header-font">
+		<h3 ><b>Artificial Intelligence - are you ready?</b></h3>
+	</div>
+
+	<div class="column-m header-font"><h2 >&nbsp;</h2></div>
+
+	<div class="column-r content-font">
+		<p>Most businesses are considering how Artificial Intelligence can be deployed to improve business performance, or at a minimum to stay relevant in the future and not get left behind by the competition.</p>
+
+		<p>Some of these businesses have started AI pilots. Often, these are technology led initiatives, with little or no involvement from the board or senior executives other than initial sign-off. Business outcomes tend to be poorly defined and success poorly monitored. As a result, the vast majority of AI pilots are not delivering any positive results. What is worse, AI pilots that do not deliver often put the organization off trying to use Artificial Intelligence in future.</p>
+
+		<p>Good AI initiatives start with a strong vision from the top of the organization around what future business outcomes are key to long-term survival and profitable growth of the business. </p>
+
+		<p>From this vision, an innovation roadmap is defined which clearly defines a set of achievable and measurable business objectives that will contribute to delivering this vision. </p>
+
+		<p>These business objectives need to be prioritized, and will lead to a set of initiatives that should include well-conceived projects that can start delivering results based on the &#8216;as-is&#8217; status of the business and grow in ambition as the business transforms,. </p>
+
+		<p>At the same time there need to be change management initiatives to ensure buy-in and involvement across the organization. The most successful AI projects are inspired by the top but brought to life by staff across the organization.</p>
+
+		<p> If all of this sounds daunting, why not contact us at <a href="mailto:sales@cognilogica.ai">sales@cognilogica.ai</a>? We can help you define an AI vision that will work for your business, and work with you to put it in action and see it through to a successful outcome.</p>
+	</div>
+
+	<div class="column-m header-font"><h2 >&nbsp;</h2></div>
+
 </div>
 
 </body>
