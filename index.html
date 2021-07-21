@@ -16,9 +16,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header-div {
-  background-color: transparent;
-}
 * {
   box-sizing: border-box;
 }
@@ -51,14 +48,38 @@
 .header-font {
   font-family: 'Libre Franklin Bold', sans-serif;
   font-variant-caps: all-small-caps;
-  /* font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;  */
-  /*font-family: Roboto, Arial, Geneva, Helvetica, sans-serif;*/
+  font-size: 1.25rem;
+}
+
+.tagline-font {
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-variant-caps: all-small-caps;
+  color: white;
+  font-size: 2.75rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.tagline-font-lite {
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-variant-caps: normal;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.downarrow-font {
+  font-family: 'Libre Franklin Bold', sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .content-font {
   font-family: 'Libre Franklin', sans-serif;
-  /* font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;  */
-  /*font-family: Roboto, Arial, Geneva, Helvetica, sans-serif;*/
+  font-weight: 600;
 }
 
 .text-block {
@@ -79,12 +100,12 @@
     } 
 	
 .header-tagline {
-  width:90%;
   float: left; 
+  width:90%;
   padding:10px;
   font-family: 'Libre Franklin Bold', sans-serif;
   font-variant-caps: all-small-caps;
-  text-color: while;
+  text-color: white;
 }
 
 </style>
@@ -95,18 +116,19 @@
 <body style="height:100%;">
 <div class="parallax-cognilogica-bg"></div>
 
-<div class="header-div" style="height:20%;width=100%;">
-	<div style="height:30%;">
-		<div class="text-block">
-		<div class="row">
-			<div style="width:10%;float: left; padding:10px;">
-				<img src="./cropped-C_Icon_Sq-1.png" width="80rem"></img>
-			</div>
-			<div class="header-tagline">
-			AAAA
-			</div>
+<div class="row" style="height:20%;">
+	<div class="text-block">
+		<div class="column-l" style="width:15%;">
+			<img src="./cropped-C_Icon_Sq-1.png" width="75rem"></img>
 		</div>
+
+		<div class="column-m header-font" style="width:1%;"><h2 >&nbsp;</h2></div>				
+
+		<div class="column-r tagline-font">
+			<div style="width: 100%">Cognilogica.ai</div>
+			<div class="tagline-font-lite">Artificial Intelligence Based Digital Transformation</div>
 		</div>
+		<div class="column-m downarrow-font" style="width:10%;text-align:right;">&darr;</div>				
 	</div>
 </div>
 <div class="row">
