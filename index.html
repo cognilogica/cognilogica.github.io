@@ -61,6 +61,32 @@
   /*font-family: Roboto, Arial, Geneva, Helvetica, sans-serif;*/
 }
 
+.text-block {
+    /*added*/
+    display:block;
+    position:absolute;
+    top:85%;
+    left:7%;
+
+    /*original*/
+    background:rgba(0, 0, 0, 0.001);
+    /* border-top:1px solid #000;
+    border-bottom:1px solid #000; */
+    padding-bottom:50px;
+    padding-left:10%;
+    padding-right:10%;
+    width:100%;
+    } 
+	
+.header-tagline {
+  width:90%;
+  float: left; 
+  padding:10px;
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-variant-caps: all-small-caps;
+  text-color: while;
+}
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,8 +97,15 @@
 
 <div class="header-div" style="height:20%;width=100%;">
 	<div style="height:30%;">
-		<div style="width: 40%;">
-			<img src="./cropped-C_Icon_Sq-1.png" width="80rem"></img>
+		<div class="text-block">
+		<div class="row">
+			<div style="width:10%;float: left; padding:10px;">
+				<img src="./cropped-C_Icon_Sq-1.png" width="80rem"></img>
+			</div>
+			<div class="header-tagline">
+			AAAA
+			</div>
+		</div>
 		</div>
 	</div>
 </div>
