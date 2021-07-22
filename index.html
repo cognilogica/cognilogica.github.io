@@ -1,169 +1,177 @@
 <!DOCTYPE html>
-<html  lang="en-US" style="height:100%;">
+<html  lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, max-image-preview:large" />
+<meta http-equiv="Cache-control" content="private">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
 <title>Cognilogica.ai &#8211; Artificial Intelligence Based Digital Transformation </title>
-<meta name='robots' content='max-image-preview:large' />
 <style>
-.parallax-cognilogica-bg {
-  /* The image used */
-  background-image: url("./cropped-stanislav-kondratiev-MdexOj4D-MU-unsplash_2000x1200.jpg");
-
-  /* Set a specific height */
-  min-height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-* {
-  box-sizing: border-box;
+html, body {
+    padding: 0px;
+    margin: 0px;
 }
 
-/* Create two equal columns that floats next to each other */
-.column-l {
-  float: left;
-  text-align: right;
-  width: 30%;
-  padding: 10px;
-}
-.column-m {
-  float: left;
-  width: 5%;
-  padding: 10px;
-}
-.column-r {
-  float: left;
-  width: 40%;
-  padding: 10px;
+html {
+    overflow: hidden;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
-.header-font {
+div.parallax {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+div.parallax:after {
+    background-image: url("./cropped-stanislav-kondratiev-MdexOj4D-MU-unsplash_2000x1200.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    content: "";
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+}
+
+h1 {
+    width: 100%;
+    text-align: left;
+    padding-top: 50%; 
+	padding-left: 10%;
+    margin: 0px;
+    float: bottom;
   font-family: 'Libre Franklin Bold', sans-serif;
   font-variant-caps: all-small-caps;
+  color: white;
+  font-size: 2.75rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #000000;}
+h2 {
+    width: 100%;
+    text-align: left;
+	padding-left: 10%;
+    margin: 0px;
+    float: bottom;
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-variant-caps: all-small-caps;
+  color: white;
   font-size: 1.25rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.tagline-font {
+div.content-outer {
+    width: 100%;
+    background-color: white;
+    -webkit-perspective: 2px;
+    perspective: 2px;
+	
+    min-height: min-content;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #666;
+}
+
+div.content-inner {
+    width: 80%;
+    font-family: "Arial";
+    font-size: 13pt;
+    color: #333;
+    line-height: 1.40em;
+    padding: 50px 20px;
+    margin: 0px auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        width: 88%;
+    text-align: left;
+    padding-top: 50%; 
+	padding-left: 10%;
+    margin: 0px;
+    float: bottom;
   font-family: 'Libre Franklin Bold', sans-serif;
   font-variant-caps: all-small-caps;
   color: white;
   font-size: 2.75rem;
   font-weight: 600;
   text-shadow: 2px 2px 4px #000000;
+    }
+
+    div.content-inner {
+        width: 80%;
+        text-align: justify;
+        padding: 20px 0px;
+    }
 }
-
-.tagline-font-lite {
-  font-family: 'Libre Franklin Bold', sans-serif;
-  font-variant-caps: normal;
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.downarrow-font {
-  font-family: 'Libre Franklin Bold', sans-serif;
-  color: white;
-  font-size: 2.6rem;
-  font-weight: 600;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.content-font {
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 600;
-}
-
-.text-block {
-    /*added*/
-    display:block;
-    position:absolute;
-    top:85%;
-    left:7%;
-
-    /*original*/
-    background:rgba(0, 0, 0, 0.001);
-    /* border-top:1px solid #000;
-    border-bottom:1px solid #000; */
-    padding-bottom:50px;
-    padding-left:10%;
-    padding-right:10%;
-    width:100%;
-    } 
-	
-.header-tagline {
-  float: left; 
-  width:90%;
-  padding:10px;
+.tagline {
   font-family: 'Libre Franklin Bold', sans-serif;
   font-variant-caps: all-small-caps;
-  text-color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
-
 </style>
 <link rel="icon" href="cropped-C_Icon_Sq-32x32.png" sizes="32x32" />
 <link rel="icon" href="cropped-C_Icon_Sq-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="cropped-C_Icon_Sq-180x180.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap" rel="stylesheet">
 </head>
-<body style="height:100%;">
-<div class="parallax-cognilogica-bg"></div>
+<body>
 
-<div class="row" style="height:20%;">
-	<div class="text-block">
-		<div class="column-l" style="width:15%;">
-			<img src="./cropped-C_Icon_Sq-1.png" width="75rem"></img>
-		</div>
-
-		<div class="column-m header-font" style="width:1%;"><h2 >&nbsp;</h2></div>				
-
-		<div class="column-r tagline-font">
-			<div style="width: 100%">Cognilogica.ai</div>
-			<div class="tagline-font-lite">Artificial Intelligence Based Digital Transformation</div>
-		</div>
-		<div class="column-m downarrow-font" style="width:10%;text-align:right;">&darr;</div>				
-	</div>
+<div class="parallax">
+    <h1>Cognilogica.ai</h1>
+	<h2>Artificial Intelligence Based Digital Transformation</h2>
 </div>
-<div class="row">
-	<div class="column-m header-font"><h2 >&nbsp;</h2></div>
 
-	<div class="column-l header-font">
-		<h3 ><b>Artificial Intelligence - are you ready?</b></h3>
-	</div>
+<div class="content-outer">
+    <div class="content-inner">
+		<div class="tagline">
+			Artificial Intelligence - Are You Ready?
+		</div>
+		<div>
+			<p>Most businesses are considering how Artificial Intelligence can be deployed to improve business performance, or at a minimum to stay relevant in the future and not get left behind by the competition.</p>
 
-	<div class="column-m header-font"><h2 >&nbsp;</h2></div>
+			<p>Some of these businesses have started AI pilots. Often, these are technology led initiatives, with little or no involvement from the board or senior executives other than initial sign-off. Business outcomes tend to be poorly defined and success poorly monitored. As a result, the vast majority of AI pilots are not delivering any positive results. What is worse, AI pilots that do not deliver often put the organization off trying to use Artificial Intelligence in future.</p>
 
-	<div class="column-r content-font">
-		<p>Most businesses are considering how Artificial Intelligence can be deployed to improve business performance, or at a minimum to stay relevant in the future and not get left behind by the competition.</p>
+			<p>Good AI initiatives start with a strong vision from the top of the organization around what future business outcomes are key to long-term survival and profitable growth of the business. </p>
 
-		<p>Some of these businesses have started AI pilots. Often, these are technology led initiatives, with little or no involvement from the board or senior executives other than initial sign-off. Business outcomes tend to be poorly defined and success poorly monitored. As a result, the vast majority of AI pilots are not delivering any positive results. What is worse, AI pilots that do not deliver often put the organization off trying to use Artificial Intelligence in future.</p>
+			<p>From this vision, an innovation roadmap is defined which clearly defines a set of achievable and measurable business objectives that will contribute to delivering this vision. </p>
 
-		<p>Good AI initiatives start with a strong vision from the top of the organization around what future business outcomes are key to long-term survival and profitable growth of the business. </p>
+			<p>These business objectives need to be prioritized, and will lead to a set of initiatives that should include well-conceived projects that can start delivering results based on the &#8216;as-is&#8217; status of the business and grow in ambition as the business transforms,. </p>
 
-		<p>From this vision, an innovation roadmap is defined which clearly defines a set of achievable and measurable business objectives that will contribute to delivering this vision. </p>
+			<p>At the same time there need to be change management initiatives to ensure buy-in and involvement across the organization. The most successful AI projects are inspired by the top but brought to life by staff across the organization.</p>
 
-		<p>These business objectives need to be prioritized, and will lead to a set of initiatives that should include well-conceived projects that can start delivering results based on the &#8216;as-is&#8217; status of the business and grow in ambition as the business transforms,. </p>
-
-		<p>At the same time there need to be change management initiatives to ensure buy-in and involvement across the organization. The most successful AI projects are inspired by the top but brought to life by staff across the organization.</p>
-
-		<p> If all of this sounds daunting, why not contact us at <a href="mailto:sales@cognilogica.ai">sales@cognilogica.ai</a>? We can help you define an AI vision that will work for your business, and work with you to put it in action and see it through to a successful outcome.</p>
-	</div>
-
-	<div class="column-m header-font"><h2 >&nbsp;</h2></div>
-
+			<p> If all of this sounds daunting, why not contact us at <a href="mailto:sales@cognilogica.ai">sales@cognilogica.ai</a>? We can help you define an AI vision that will work for your business, and work with you to put it in action and see it through to a successful outcome.</p>
+		</div>
+    </div>
 </div>
 
 </body>
